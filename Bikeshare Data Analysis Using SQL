@@ -1,5 +1,11 @@
 # Bikeshare Data Analysis Using SQL Temporary Tables
 
+
+## The bikeshare company wanted to celebrate the popularity of its most-used bike. The marketing team requested analysis on:
+
+- The most-used bike in the system.
+- The station where that bike is most commonly found.
+
 ## Objective
 Analyze bikeshare data to find the most-used bike and the station where it’s most commonly found using SQL temporary tables.
 
@@ -19,3 +25,5 @@ CREATE TEMPORARY TABLE temp_bike_usage AS
 SELECT bike_id, start_station_name, COUNT(*) AS trip_count
 FROM bikeshare_trips
 GROUP BY bike_id, start_station_name;
+
+
